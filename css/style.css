@@ -17,6 +17,10 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Poppins";
 }
@@ -526,6 +530,7 @@ a {
 	}
 
 	.invite-body h2 {
+		padding-left: 0;
 		width: 100%;
 		text-align: center;		
 	}
