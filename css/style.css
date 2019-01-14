@@ -25,6 +25,10 @@ a {
 	text-decoration: none;
 }
 
+.container {
+	width: 80%;	
+}
+
 /*****Header*****/
 
 .header-wrap {
@@ -46,6 +50,7 @@ a {
 	min-height: 170vh;
 	position: relative;
 	-webkit-background-size: 100%  auto;
+	position: relative;
 }
 
 .logo {
@@ -134,6 +139,10 @@ a {
 	color: #fff;
 }
 
+.menu-item-link:hover {
+	color: #ffa800;
+}
+
 .phone {
 	background-image: url("../img/phone_bg.png");
 	background-position: center center;
@@ -169,8 +178,8 @@ a {
 	font-weight: 400;
 	text-align: center;
 	text-transform: uppercase;
-	width: 80%;
 }
+
 
 .scroll-down-wrap {
 	align-items: center;
@@ -205,15 +214,15 @@ a {
 	color: #fff;
 	font-size: 30px;
 	margin-top: 69px;
+	margin-bottom: 35vw;
 }
 
-.header-rectangle {
-	border-left: 20px solid #fff;
-	border-right: 20px solid #fff;
-	border-top: 20px solid #fff;
-	height: 25vw;
-	margin-top: 78px;
+.rectangle {
+	border: 1.5vw solid #fff;
+	height: 50vw;
 	width: 50vw;
+	position: absolute;
+	bottom: -26.5vw;
 }
 
 .header-right-side {
@@ -264,7 +273,122 @@ a {
 	font-size: 25px;
 }
 
+/*****Section Invite*****/
 
+.invite {
+	background-color: #694fca;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	height: 1500px;
+}
+
+.invite-header {
+	height: 25vw;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	text-transform: uppercase;
+	position: relative;
+	
+}
+
+.number {
+	color: #ffa800;
+	font-family: "AbrahamLincoln";
+	font-size: 16vw;
+	font-weight: 400;
+	margin: 0;
+	position: absolute;
+}
+
+.invite-number {
+	left: 2.5vw;
+	bottom: -4.5vw;
+}
+
+.invite-header-text {
+	width: 50vw;
+	padding-left: 4vw;
+	padding-right: 1vw;
+}
+
+.invite-header h2 {
+	color: #ffffff;
+	font-family: "AbrahamLincoln";
+	font-size: 8vw;
+	font-weight: 400;
+	margin: 0;
+}
+
+.invite-header h2 + p {
+	color: #ffffff;
+	font-family: "AbrahamLincoln";
+	font-size: 3vw;
+	font-weight: 400;
+	margin: 0;
+	padding-top: 1vw;
+	position: absolute;
+	z-index: 1;
+}
+
+.invite-header-img {
+	position: absolute;
+	width: 35vw;
+	height: auto;
+	right: -6.6vw;
+	bottom: -8.3vw;
+}
+
+.invite-body {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 130px;
+}
+
+.invite-body h2 {
+	padding-left: 20px;
+	width: 25%;
+	color: #ffffff;
+	font-family: "AbrahamLincoln";
+	font-size: 98px;
+	font-weight: 400;
+	line-height: 90px;
+}
+
+.invite-body p {
+	width: 60%;
+	color: #ffffff;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 40px;
+	margin-top: 45px;
+	}
 /*****Media queries*****/
 
 @media (max-width: 1199px) {
@@ -278,6 +402,19 @@ a {
 
 	.header-right-side {
 		font-size: 14px;
+	}
+
+	.invite-body {
+		margin-top: 100px;		
+	}
+
+	.invite-body h2 {
+		font-size: 80px;
+		line-height: 80px;
+	}
+
+	.invite-body p {
+		line-height: 35px;
 	}
 }
 
@@ -326,6 +463,17 @@ a {
 		font-size: 12px;
 	}
 
+	.invite-body h2 {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	.invite-body p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+
 }
 
 @media (max-width: 767px) {
@@ -373,11 +521,36 @@ a {
 		right: 17px;
 	}
 
+	.invite-body {
+		flex-direction: column;
+	}
+
+	.invite-body h2 {
+		width: 100%;
+		text-align: center;		
+	}
+
+	.invite-body p   {
+		width: 100%;
+		text-align: justify;
+		margin-top: 20px;
+	}
+	
+
 }
 
 @media (max-width: 480px) {
 	.soc-network {
 		margin-right: 0;
+	}
+
+	.invite-header h2 {
+		font-size: 7vw;
+	}
+
+	.invite-header h2 + p {
+		font-size: 3vw;
+		padding-top: 3.5vw;
 	}
 }
 
