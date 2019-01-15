@@ -375,7 +375,7 @@ a {
 }
 
 .invite-body h2 {
-	padding-left: 20px;
+	/*padding-left: 20px;*/
 	width: 25%;
 	color: #ffffff;
 	font-family: "AbrahamLincoln";
@@ -393,6 +393,86 @@ a {
 	line-height: 40px;
 	margin-top: 45px;
 	}
+
+.carusel {
+
+}
+
+.carusel-list {
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 0;
+}
+
+.carusel-list :last-child {
+	padding-right: 0;
+}
+
+.carusel-item {
+	padding-right: 100px;
+}
+
+.carusel-icon {
+	font-size: 30px;
+}
+
+.carusel-item-header {
+	color: #ffa800;
+	font-family: "AbrahamLincoln";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 34px;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 22px;
+}
+
+.carusel-item-text {
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.hor-line {
+	width: 50px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 39px;
+}
+
+.carusel-link {
+	color: #fff;	
+}
+
+.carusel-indicator {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 123px;
+		}
+
+	.carusel-indicator-item {
+		width: 11px;
+		height: 5px;
+		background-color: #fff;
+		margin-right: 19px;
+		border-radius: 3px;
+	}
+
+	.carusel-indicator-item-active {
+		width: 38px;
+		background-color: #ffa800;
+	}
+
 /*****Media queries*****/
 
 @media (max-width: 1199px) {
@@ -477,6 +557,10 @@ a {
 		line-height: 30px;
 	}
 
+	.carusel-item-text {
+		font-size: 14px;
+		line-height: 26px;
+	}
 
 }
 
