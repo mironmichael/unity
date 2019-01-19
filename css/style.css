@@ -395,10 +395,12 @@ a {
 	}
 
 .carusel {
-
+	width: 80vw;
+	overflow: hidden;
 }
 
 .carusel-list {
+	width: 9999px;
 	list-style: none;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -408,12 +410,9 @@ a {
 	padding: 0;
 }
 
-.carusel-list :last-child {
-	padding-right: 0;
-}
-
 .carusel-item {
-	padding-right: 100px;
+	padding-right: 3.3vw;
+	width: 24.33vw;
 }
 
 .carusel-icon {
@@ -449,29 +448,29 @@ a {
 }
 
 .carusel-indicator {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		width: 100px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 123px;
-		}
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 123px;
+}
 
-	.carusel-indicator-item {
-		width: 11px;
-		height: 5px;
-		background-color: #fff;
-		margin-right: 19px;
-		border-radius: 3px;
-	}
+.carusel-indicator-item {
+	width: 11px;
+	height: 5px;
+	background-color: #fff;
+	margin-right: 19px;
+	border-radius: 3px;
+}
 
-	.carusel-indicator-item-active {
-		width: 38px;
-		background-color: #ffa800;
-	}
+.carusel-indicator-item-active {
+	width: 38px;
+	background-color: #ffa800;
+}
 
 /*****Media queries*****/
 
