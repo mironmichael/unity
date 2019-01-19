@@ -410,6 +410,14 @@ a {
 	padding: 0;
 }
 
+.carusel-items-group-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
 .carusel-item {
 	padding-right: 3.3vw;
 	width: 24.33vw;
